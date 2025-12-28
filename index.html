@@ -41,6 +41,7 @@
             <li class="nav__item"><a href="#">КОНТАКТЫ</a></li>
         </ul>
     </nav>
+    <img src="./assets/icons/burger-menu-svgrepo-com.svg" alt="menu" class="header__modile_burger"/>
 </header>
 <main>
     <section class="coffee_info">
@@ -211,6 +212,8 @@
                         <div>
                             <p class="brief__heading">Имеется спорная</p>
                             <p>Имеется спорная</p>
+                            <br>
+                            <button class="primary_button">В рамках</button>
                         </div>
                     </div>
                     <div class="extra_info__brief">
@@ -218,12 +221,10 @@
                         <div>
                             <p>Имеется спорная</p>
                             <p>700 - 800m</p>
+                            <br>
+                            <button class="button">В рамках</button>
                         </div>
                     </div>
-                </div>
-                <div class="gift_info__button_set">
-                    <button class="primary_button">В рамках</button>
-                    <button class="button">В рамках</button>
                 </div>
             </div>
             <div class="gift_info__gift_number_set">
@@ -380,6 +381,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const secondBtn = document.getElementById('secondBtn');
     const listSet = document.querySelector('.coffee_info__list_set');
     const secondListSet = document.getElementById('second');
+
+    const burgerMenu = document.querySelector('.header__modile_burger');
+    const nav = document.querySelector('.header__nav');
+
+    burgerMenu.addEventListener('click', () => {
+    
+        if (nav.style.display === 'flex' || nav.style.display === '') {
+            nav.style.display = 'none';
+        } else {
+            nav.style.display = 'flex';
+        }
+    })
     
     if (scrollRightBtn && listSet) {
         scrollRightBtn.addEventListener('click', function() {
