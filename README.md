@@ -6,4 +6,4 @@
 
 Реализовано 9 breakpoints (1660px, 1420px, 1090px, 970px, 930px, 740px, 650px, 550px, 505px)
 
-new line 7
+new line 8
